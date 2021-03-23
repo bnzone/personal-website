@@ -18,12 +18,12 @@ export default function About() {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
-            <img src={siteMetadata.image} alt="avatar" className="w-48 h-48 rounded-full" />
+            <img src={siteMetadata.image} alt="avatar" className="w-48 h-52 rounded-full" />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Professor of Atmospheric Science</div>
-            <div className="text-gray-500 dark:text-gray-400">Stanford University</div>
+            <div className="text-gray-500 dark:text-gray-400">Junior Software Developer</div>
+            <div className="text-gray-500 dark:text-gray-400">San Francisco, CA</div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
@@ -35,19 +35,20 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His
-              research interests includes complexity modelling of tailwinds, headwinds and
-              crosswinds.
+              Since I was a kid, I always had an interest in computers and technology, even though
+              my official education led me elsewhere - to get a Master's degree in the field of
+              Economics.
             </p>
             <p>
-              He leads the clean energy group which develops 3D air pollution-climate models, writes
-              differential equation solvers, and manufactures titanium plated air ballons. In his
-              free time he bakes raspberry pi.
+              However, my passion for computers never went away, and I eventually decided to fully
+              pursue my dream of becoming a software developer. I am always striving to learn new
+              latest technologies and expand my knowledge. Currently, I'm improving my skills by
+              developing web applications using HTML, CSS and JavaScript. Some of my favorite
+              libraries/frameworks include React, Redux and Next.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
-              placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem
-              nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+              At this moment I am looking forward to bringing my passion to a full-time role, to
+              work with like-minded people and make amazing products that bring value to people.
             </p>
           </div>
         </div>

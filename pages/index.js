@@ -40,7 +40,7 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                  {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
@@ -61,9 +61,7 @@ export default function Home({ posts }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
+                            {tags ? tags.map((tag) => <Tag key={tag} text={tag} />) : ''}
                           </div>
                         </div>
                         <div className="prose text-gray-500 max-w-none dark:text-gray-400">
@@ -80,7 +78,7 @@ export default function Home({ posts }) {
                         </Link>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </article>
               </li>
             )
