@@ -22,10 +22,10 @@ export default function Home({ posts }) {
         url={siteMetadata.siteUrl}
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className=" pt-6 pb-8 space-y-2 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
             Hey, I am Igor{' '}
-            <span role="img" aria-label="hand wawing emoji">
+            <span role="img" aria-label="hand waving emoji">
               👋🏻
             </span>
           </h1>
@@ -103,7 +103,7 @@ export default function Home({ posts }) {
           </p>
         </div>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {/* {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
@@ -113,7 +113,7 @@ export default function Home({ posts }) {
             All Posts &rarr;
           </Link>
         </div>
-      )}
+      )} */}
     </>
   )
 }
