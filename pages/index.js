@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import Tag from '@/components/Tag'
+//import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 
@@ -33,15 +33,15 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>
-                  {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                    <dl>
+                  {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline"> */}
+        {/* <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>
@@ -78,12 +78,30 @@ export default function Home({ posts }) {
                         </Link>
                       </div>
                     </div>
-                  </div> */}
-                </article>
+                  </div> */}{' '}
+        {/* </article>
               </li>
             )
           })}
-        </ul>
+        </ul> */}
+        <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+          <p>
+            Since I was a kid, I always had an interest in computers and technology, even though my
+            official education led me elsewhere - to get a Master's degree in the field of
+            Economics.
+          </p>
+          <p>
+            However, my passion for computers never went away, and I eventually decided to fully
+            pursue my dream of becoming a software developer. I am always striving to learn new
+            latest technologies and expand my knowledge. Currently, I'm improving my skills by
+            developing web applications using HTML, CSS, and JavaScript. Some of my favorite
+            libraries/frameworks include React, Redux, and Next.
+          </p>
+          <p>
+            At this moment I am looking forward to bringing my passion to a full-time role. I enjoy
+            working with like-minded people and making amazing products that bring value to users.
+          </p>
+        </div>
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
