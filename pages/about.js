@@ -41,7 +41,7 @@ export default function About() {
             </p>
             <p>
               However, my passion for computers never went away, and I eventually decided to fully
-              pursue my dream of becoming a software developer. I am always striving to learn new
+              pursue my dream of becoming a software developer. I am always striving to learn the
               latest technologies and expand my knowledge. Currently, I'm improving my skills by
               developing web applications using HTML, CSS, and JavaScript. Some of my favorite
               libraries/frameworks include React, Redux, and Next.
