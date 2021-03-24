@@ -1,5 +1,6 @@
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
+import { Fragment } from 'react'
 //import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
@@ -15,25 +16,26 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <>
+    <Fragment>
       <PageSeo
         title={siteMetadata.title}
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className=" pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
-            Hey, I am Igor{' '}
-            <span role="img" aria-label="hand waving emoji">
-              👋🏻
-            </span>
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
-        </div>
-        {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="flex  justify-center h-screen">
+        <div className=" divide-y divide-gray-200 dark:divide-gray-700">
+          <div className=" pt-6 pb-8 space-y-2 md:space-y-5">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
+              Hey, I am Igor{' '}
+              <span role="img" aria-label="hand waving emoji">
+                👋🏻
+              </span>
+            </h1>
+            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+              {siteMetadata.description}
+            </p>
+          </div>
+          {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -41,7 +43,7 @@ export default function Home({ posts }) {
               <li key={slug} className="py-12">
                 <article>
                   {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline"> */}
-        {/* <dl>
+          {/* <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>
@@ -79,12 +81,12 @@ export default function Home({ posts }) {
                       </div>
                     </div>
                   </div> */}{' '}
-        {/* </article>
+          {/* </article>
               </li>
             )
           })}
         </ul> */}
-        <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+          {/* <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
           <p>
             Since I was a kid, I always had an interest in computers and technology, even though my
             official education led me elsewhere - to get a Master's degree in the field of
@@ -101,6 +103,7 @@ export default function Home({ posts }) {
             At this moment I am looking forward to bringing my passion to a full-time role. I enjoy
             working with like-minded people and making amazing products that bring value to users.
           </p>
+        </div> */}
         </div>
       </div>
       {/* {posts.length > MAX_DISPLAY && (
@@ -114,6 +117,6 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )} */}
-    </>
+    </Fragment>
   )
 }

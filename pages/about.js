@@ -22,7 +22,7 @@ export default function About() {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Aspiring Software Developer</div>
+            <div className="text-gray-500 dark:text-gray-400">Software Developer</div>
             <div className="text-gray-500 dark:text-gray-400">San Francisco, CA</div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
@@ -35,16 +35,16 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Since I was a kid, I always had an interest in computers and technology, even though
-              my official education led me elsewhere - to get a Master's degree in the field of
-              Economics.
+              I was born in Russia and since I was a small kid, I always had an interest in
+              computers and technology, even though my official education led me elsewhere - to get
+              a Master's degree in the field of Economics.
             </p>
             <p>
               However, my passion for computers never went away, and I eventually decided to fully
-              pursue my dream of becoming a software developer. I am always striving to learn the
-              latest technologies and expand my knowledge. Currently, I'm improving my skills by
-              developing web applications using HTML, CSS, and JavaScript. Some of my favorite
-              libraries/frameworks include React, Redux, and Next.
+              pursue my dream of becoming a software developer after moving to the USA. I am always
+              striving to learn the latest technologies and expand my knowledge. Currently, I'm
+              improving my skills by developing full stack web applications using HTML, CSS, and
+              JavaScript.
             </p>
             <p>
               At this moment I am looking forward to bringing my passion to a full-time role. I
