@@ -37,9 +37,11 @@ const BoxesPage = () => {
       <ambientLight intensity={2} />
       <pointLight position={[40, 40, 40]} />
       <MyBox position={[10, 0, 0]} />
+
       <MyBox position={[-10, 0, 0]} />
       <MyBox position={[0, 10, 0]} />
       <MyBox position={[0, -10, 0]} />
+
       <OrbitControls />
     </Canvas>,
   ]
