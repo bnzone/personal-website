@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 //import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
@@ -21,6 +21,10 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
   return (
     <Fragment>
       <PageSeo
@@ -41,7 +45,8 @@ export default function Home({ posts }) {
               {siteMetadata.description}
             </p>
           </div>
-          <NoSSRComponent />
+          <button onClick={() => handleClick()}>Click me</button>
+          {clicked ? <NoSSRComponent /> : <p>button not clicked</p>}
           {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
