@@ -27,8 +27,10 @@
     "next-transpile-modules": "^6.3.0",
     "postcss": "^8.2.1",
     "preact": "^10.5.7",
+    "r3f-perf": "^0.91.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-spring": "^9.0.0",
     "react-three-fiber": "^5.3.21",
     "reading-time": "1.2.1",
     "rehype-katex": "^4.0.0",
@@ -38,7 +40,8 @@
     "remark-math": "3.0.1",
     "remark-slug": "6.0.0",
     "tailwindcss": "^2.0.2",
-    "three": "^0.126.1"
+    "three": "^0.126.1",
+    "three-stdlib": "^1.0.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.0.0",

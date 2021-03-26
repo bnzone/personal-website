@@ -40,7 +40,7 @@ const BirdsPage = (props) => {
         <pointLight position={[40, 40, 40]} />
         <OrbitControls />
         <Suspense fallback={null}>
-          <Birds />
+          <Birds r3f />
         </Suspense>
       </Canvas>
     </>
