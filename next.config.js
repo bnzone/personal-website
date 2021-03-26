@@ -22,7 +22,7 @@ module.exports = withPlugins(
   {
     webpack: (config, { dev, isServer }) => {
       config.module.rules.push({
-        test: /\.(png|jpe?g|gif|mp4)$/i,
+        test: /\.(png|jpe?g|gif|mp4|glb|gltf)$/i,
         use: [
           {
             loader: 'file-loader',
