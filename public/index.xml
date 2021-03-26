@@ -3,23 +3,13 @@
     <channel>
       <title>Personal Website</title>
       <link>https://igorshevchenko.net/blog</link>
-      <description> Software Developer</description>
+      <description>Software Developer based in San Francisco, CA</description>
       <language>en-us</language>
       <managingEditor>hello.igorshevchenko@gmail.com (Igor Shevchenko)</managingEditor>
       <webMaster>hello.igorshevchenko@gmail.com (Igor Shevchenko)</webMaster>
-      <lastBuildDate>Mon, 22 Mar 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 11 Nov 2020 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://igorshevchenko.net/index.xml" rel="self" type="application/rss+xml"/>
       
-  <item>
-    <guid>https://igorshevchenko.net/blog/introducing-tailwind-nextjs-starter-blog</guid>
-    <title>Hey, I am Igor! </title>
-    <link>https://igorshevchenko.net/blog/introducing-tailwind-nextjs-starter-blog</link>
-    <description>Welcome to my first blog post on my first website.</description>
-    <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
-    <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
-    <category>life</category>
-  </item>
-
   <item>
     <guid>https://igorshevchenko.net/blog/guide-to-using-images-in-nextjs</guid>
     <title>Images in Next.js</title>
@@ -41,9 +31,9 @@
   </item>
 
   <item>
-    <guid>https://igorshevchenko.net/blog/github-markdown-guide</guid>
+    <guid>https://igorshevchenko.net/blog/test</guid>
     <title>Markdown Guide</title>
-    <link>https://igorshevchenko.net/blog/github-markdown-guide</link>
+    <link>https://igorshevchenko.net/blog/test</link>
     <description>Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.</description>
     <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
     <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
@@ -68,6 +58,16 @@
     <pubDate>Sat, 15 Jul 2017 00:00:00 GMT</pubDate>
     <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
     <category>holiday</category><category>canada</category><category>images</category>
+  </item>
+
+  <item>
+    <guid>https://igorshevchenko.net/blog/code-sample-1</guid>
+    <title>Sample .md file</title>
+    <link>https://igorshevchenko.net/blog/code-sample-1</link>
+    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <pubDate>Tue, 08 Mar 2016 00:00:00 GMT</pubDate>
+    <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
+    <category>markdown</category><category>code</category><category>features</category>
   </item>
 
   <item>
