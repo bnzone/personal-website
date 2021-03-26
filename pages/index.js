@@ -1,17 +1,11 @@
-import Link from '@/components/Link'
+// import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import { Fragment } from 'react'
 //import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-// import BoxesPage from '../components/Boxes'
-
-// import dynamic from 'next/dynamic'
-// const NoSSRComponent = dynamic(() => import('../components/Boxes'), {
-//   ssr: false,
-// })
-
-const isServer = () => typeof window === 'undefined'
+import { Canvas } from 'react-three-fiber'
+import Link from 'next/link'
 
 const MAX_DISPLAY = 5
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -43,6 +37,9 @@ export default function Home({ posts }) {
               {siteMetadata.description}
             </p>
           </div>
+          <Link href="/birds">
+            <a>Birds Example</a>
+          </Link>
           {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
