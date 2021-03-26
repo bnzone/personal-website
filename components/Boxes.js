@@ -26,26 +26,19 @@ const MyBox = (props) => {
 }
 
 const BoxesPage = () => {
-  // return [
-  //   <h1 key="h1">
-  //     Click on me{' '}
-  //     <span role="img" aria-label="Wink Emoji">
-  //       😜
-  //     </span>{' '}
-  //   </h1>,
-  //   <Canvas key="canvas" camera={{ position: [0, 0, 35] }}>
-  //     <ambientLight intensity={2} />
-  //     <pointLight position={[40, 40, 40]} />
-  //     <MyBox position={[10, 0, 0]} />
+  return (
+    <Canvas key="canvas" camera={{ position: [0, 0, 35] }}>
+      <ambientLight intensity={2} />
+      <pointLight position={[40, 40, 40]} />
+      <MyBox position={[10, 0, 0]} />
 
-  //     <MyBox position={[-10, 0, 0]} />
-  //     <MyBox position={[0, 10, 0]} />
-  //     <MyBox position={[0, -10, 0]} />
+      <MyBox position={[-10, 0, 0]} />
+      <MyBox position={[0, 10, 0]} />
+      <MyBox position={[0, -10, 0]} />
 
-  //     <OrbitControls />
-  //   </Canvas>,
-  // ]
-  return <button>Click me lol</button>
+      <OrbitControls />
+    </Canvas>
+  )
 }
 
 export default BoxesPage
