@@ -4,7 +4,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-const withTM = require('next-transpile-modules')(['@react-three/drei', 'three'])
+const withTM = require('next-transpile-modules')([
+  '@react-three/drei',
+  'three',
+  'react-three-fiber',
+])
 
 module.exports = withPlugins(
   [
