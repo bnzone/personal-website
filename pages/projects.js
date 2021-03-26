@@ -6,9 +6,6 @@ import Card from '@/components/Card'
 import { PageSeo } from '@/components/SEO'
 // import BoxesPage from '../components/Boxes'
 import dynamic from 'next/dynamic'
-const NoSSRComponent = dynamic(() => import('../components/Boxes'), {
-  ssr: false,
-})
 
 export default function Projects() {
   return (
@@ -41,7 +38,6 @@ export default function Projects() {
           </div>
         </div> */}
       </div>
-      <NoSSRComponent />
     </>
   )
 }
