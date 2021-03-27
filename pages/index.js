@@ -21,7 +21,7 @@ export default function Home({ posts }) {
     scene.background = new THREE.Color(0xffffff)
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
     var renderer = new THREE.WebGLRenderer()
-    renderer.setSize(400, 400)
+    renderer.setSize(300, 300)
     document.querySelector('#model').appendChild(renderer.domElement)
     var geometry = new THREE.BoxGeometry(1, 1, 1)
     var material = new THREE.MeshBasicMaterial({ color: 0x000000 })
