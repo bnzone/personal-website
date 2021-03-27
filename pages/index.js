@@ -1,15 +1,10 @@
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 //import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-// import BoxesPage from '../components/Boxes'
-
-import dynamic from 'next/dynamic'
-const NoSSRComponent = dynamic(() => import('../components/Boxes'), {
-  ssr: false,
-})
+import * as THREE from 'three'
 
 const MAX_DISPLAY = 5
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -21,10 +16,29 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  const [clicked, setClicked] = useState(false)
-  const handleClick = () => {
-    setClicked(!clicked)
-  }
+  useEffect(() => {
+    var scene = new THREE.Scene()
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+    var renderer = new THREE.WebGLRenderer()
+    renderer.setSize(
+      document.querySelector('#model-place').innerWidth,
+      document.querySelector('#model-place').innerHeight
+    )
+    document.querySelector('#model').appendChild(renderer.domElement)
+    var geometry = new THREE.BoxGeometry(1, 1, 1)
+    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
+    var cube = new THREE.Mesh(geometry, material)
+    scene.add(cube)
+    camera.position.z = 5
+    var animate = function () {
+      requestAnimationFrame(animate)
+      cube.rotation.x += 0.01
+      cube.rotation.y += 0.01
+      renderer.render(scene, camera)
+    }
+    animate()
+  }, [])
+
   return (
     <Fragment>
       <PageSeo
@@ -32,7 +46,7 @@ export default function Home({ posts }) {
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
-      <div className="flex  justify-center h-screen">
+      <div id="model-place" className="flex  justify-center h-screen">
         <div className=" divide-y divide-gray-200 dark:divide-gray-700">
           <div className=" pt-6 pb-8 space-y-2 md:space-y-5">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
@@ -44,9 +58,8 @@ export default function Home({ posts }) {
             <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
               {siteMetadata.description}
             </p>
+            <div id="model" />
           </div>
-          <button onClick={() => handleClick()}>Click me</button>
-          {clicked ? <NoSSRComponent /> : <p>button not clicked</p>}
           {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
