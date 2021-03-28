@@ -18,10 +18,11 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   useEffect(() => {
     var scene = new THREE.Scene()
-    scene.background = new THREE.Color(0xffffff)
+    scene.background = null
+
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-    var renderer = new THREE.WebGLRenderer()
-    renderer.setSize(300, 300)
+    var renderer = new THREE.WebGLRenderer({ alpha: true })
+    renderer.setSize(window.innerWidth / 2, window.innerHeight / 2)
     document.querySelector('#model').appendChild(renderer.domElement)
     var geometry = new THREE.BoxGeometry(1, 1, 1)
     var material = new THREE.MeshBasicMaterial({ color: 0x000000 })
