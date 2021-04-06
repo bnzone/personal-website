@@ -20,15 +20,5 @@
     <category>life</category><category>youtube</category><category>perfectionism</category>
   </item>
 
-  <item>
-    <guid>https://igorshevchenko.net/blog/my-fancy-title</guid>
-    <title>My fancy title</title>
-    <link>https://igorshevchenko.net/blog/my-fancy-title</link>
-    <description>null</description>
-    <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
-    <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
-    <category>hello</category>
-  </item>
-
     </channel>
   </rss>
