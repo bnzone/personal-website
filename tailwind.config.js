@@ -3,7 +3,6 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    preserveHtmlElements: false,
     content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
     options: {
       safelist: ['type'], // [type='checkbox']
