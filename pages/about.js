@@ -25,6 +25,7 @@ export default function About() {
             <div className="text-gray-500 dark:text-gray-400">Software Developer</div>
             <div className="text-gray-500 dark:text-gray-400">San Francisco, CA</div>
             <div className="flex pt-6 space-x-3">
+              <SocialIcon kind="instagram" href={siteMetadata.instagram} />
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
               <SocialIcon kind="facebook" href={siteMetadata.facebook} />

@@ -1,3 +1,4 @@
+import Instagram from './instagram.svg'
 import Mail from './mail.svg'
 import Github from './github.svg'
 import Facebook from './facebook.svg'
@@ -8,6 +9,7 @@ import Twitter from './twitter.svg'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
+  instagram: Instagram,
   mail: Mail,
   github: Github,
   facebook: Facebook,
