@@ -3,7 +3,13 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+    content: [
+      './pages/**/*.js',
+      './data/**/*.mdx',
+      './components/**/*.js',
+      './layouts/**/*.js',
+      './lib/**/*.js',
+    ],
     options: {
       safelist: ['type'],
     },
