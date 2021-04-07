@@ -5,7 +5,7 @@ module.exports = {
   purge: {
     content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
     options: {
-      safelist: ['type'], // [type='checkbox']
+      safelist: ['type'],
     },
   },
   darkMode: 'class',
