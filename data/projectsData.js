@@ -7,7 +7,7 @@ const projectsData = [
   },
   {
     title: 'SnapShot - (In Progress)',
-    description: `An app for photohraphers to share their photos`,
+    description: `An app for photographers to share their photos`,
     imgSrc: '/static/images/snapshot.png',
     href: 'https://www.igorshevchenko.net/projects',
   },
