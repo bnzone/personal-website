@@ -35,22 +35,29 @@ export default function About() {
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+            <p>Hey there, my name is Igor.</p>
+            <p>I'm a software developer, self-development nerd, and YouTuber.</p>
             <p>
-              I was born in Russia and since I was a small kid, I always had an interest in
-              computers and technology, even though my official education led me elsewhere - to get
-              a Master's degree in the field of Economics.
+              I was born in Russia and since I was a kid, I've always had an interest in computers
+              and technology, even though my official education led me elsewhere - to get a Master's
+              degree in the field of Economics.
             </p>
             <p>
               However, my passion for computers never went away, and I eventually decided to fully
               pursue my dream of becoming a software developer after moving to the USA. I am always
-              striving to learn the latest technologies and expand my knowledge. Currently, I'm
-              improving my skills by developing full stack web applications using HTML, CSS, and
-              JavaScript.
+              striving to learn the latest technologies and expand my knowledge.
             </p>
             <p>
-              At this moment I am looking forward to bringing my passion to a full-time role. I
-              enjoy working with like-minded people and making amazing products that bring value to
-              users.
+              Currently, I'm improving my skills by developing full-stack web applications. The
+              tools that I'm most comfortable with include React.js for the front-end and Node.js
+              with Express.js for the back-end. As to the databases, I'm familiar with SQL, non-SQL,
+              and Firebase workflows.
+            </p>
+            <p>In my spare time, I read books, travel, and make videos for my YouTube channels.</p>
+            <p>
+              At this moment I am looking forward to bringing my passion for code to a full-time
+              role. I enjoy working with like-minded people and making amazing products that bring
+              value to users.
             </p>
           </div>
         </div>
