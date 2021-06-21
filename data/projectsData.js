@@ -1,15 +1,17 @@
 const projectsData = [
   {
-    title: 'igorshevchenko.net',
-    description: `Personal website created using Next.js & Tailwind`,
-    imgSrc: '/static/images/website.png',
-    href: 'https://www.igorshevchenko.net',
+    title: 'SnapShot',
+    description: `This project is a clone of Instagram Web App. Built with React, Firebase and TailwindCSS.`,
+    imgSrc: '/static/images/snapshot.jpg',
+    href: 'https://snapshot-three.vercel.app',
+    github: 'https://github.com/bnzone/snapshot',
   },
   {
-    title: 'SnapShot - (In Progress)',
-    description: `An app for photographers to share their photos`,
-    imgSrc: '/static/images/snapshot.png',
-    href: 'https://www.igorshevchenko.net/projects',
+    title: 'Personal Website',
+    description: `My personal website built using Next.js & Tailwind.`,
+    imgSrc: '/static/images/website.png',
+    href: 'https://www.igorshevchenko.net',
+    github: 'https://github.com/bnzone/personal-website',
   },
 ]
 
