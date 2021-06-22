@@ -1,7 +1,7 @@
 const projectsData = [
   {
     title: 'SnapShot',
-    description: `This project is a clone of Instagram Web App. Built with React, Firebase and TailwindCSS.`,
+    description: `This project is a clone of Instagram Web App. Built with React, Firebase and TailwindCSS. Tested using React Testing Library and Cypress.`,
     imgSrc: '/static/images/snapshot.jpg',
     href: 'https://snapshot-three.vercel.app',
     github: 'https://github.com/bnzone/snapshot',
