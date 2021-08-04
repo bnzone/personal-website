@@ -1,0 +1,20 @@
+---
+title: 'Next.js API update caused a bug..'
+date: '2021-08-04'
+tags: ['life', 'coding']
+draft: false
+summary: 'I noticed a strange bug while trying to update my website..'
+---
+
+# The undefined bug
+
+I decided to update some text on my posts and noticed that my auto-refresh on save wasn't working.
+I looked at the console and saw this :
+
+<img src="https://i.imgur.com/5kq2mle.png" />
+
+After some reseached I came across this GitHub issue https://github.com/hashicorp/next-remote-watch/issues/14
+where somebody had a similar problem.
+
+As somebody (at the link below) mentioned it turns out the internal API for Next.js changed and placed the hotReloader in a nested server object. Works in next js 10. Not compatible with next js 9.
+Here's the solution : https://github.com/lukesmurray/next-remote-watch/commit/bbf23298bf990278b293b457601249109878ae08

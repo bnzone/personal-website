@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>hello.igorshevchenko@gmail.com (Igor Shevchenko)</managingEditor>
       <webMaster>hello.igorshevchenko@gmail.com (Igor Shevchenko)</webMaster>
-      <lastBuildDate>Mon, 03 May 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 04 Aug 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://igorshevchenko.net/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://igorshevchenko.net/blog/next-js-api-change</guid>
+    <title>Next.js API update caused a bug..</title>
+    <link>https://igorshevchenko.net/blog/next-js-api-change</link>
+    <description>I noticed a strange bug while trying to update my website..</description>
+    <pubDate>Wed, 04 Aug 2021 00:00:00 GMT</pubDate>
+    <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
+    <category>life</category><category>coding</category>
+  </item>
+
   <item>
     <guid>https://igorshevchenko.net/blog/moving-to-sf</guid>
     <title>We moved to San Francisco!</title>
