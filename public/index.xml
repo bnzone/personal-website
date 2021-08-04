@@ -3,7 +3,7 @@
     <channel>
       <title>Personal Website</title>
       <link>https://igorshevchenko.net/blog</link>
-      <description>Software Developer based in San Francisco, CA</description>
+      <description>I'm a software developer, self-development nerd, and YouTuber.</description>
       <language>en-us</language>
       <managingEditor>hello.igorshevchenko@gmail.com (Igor Shevchenko)</managingEditor>
       <webMaster>hello.igorshevchenko@gmail.com (Igor Shevchenko)</webMaster>
@@ -14,7 +14,7 @@
     <guid>https://igorshevchenko.net/blog/moving-to-sf</guid>
     <title>We moved to San Francisco!</title>
     <link>https://igorshevchenko.net/blog/moving-to-sf</link>
-    <description>We took a road trip to the Bay Area from Charleston, SC.</description>
+    <description>We took a road trip to the Bay Area from Charleston, SC across the United States.</description>
     <pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate>
     <author>hello.igorshevchenko@gmail.com (Igor Shevchenko)</author>
     <category>life</category><category>youtube</category>
