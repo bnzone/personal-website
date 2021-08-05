@@ -7,6 +7,13 @@ const projectsData = [
     github: 'https://github.com/bnzone/snapshot',
   },
   {
+    title: 'Connect Four Game',
+    description: `Interactive Connect 4 Game built with Vanilla Javascript, HTML & CSS. Best when played by two players. Custom token color is supported.`,
+    imgSrc: '/static/images/connect-four.png',
+    href: 'https://bnzone.github.io/connect-four/',
+    github: 'https://github.com/bnzone/connect-four',
+  },
+  {
     title: 'Personal Website',
     description: `My personal website built using Next.js & Tailwind.`,
     imgSrc: '/static/images/website.png',
