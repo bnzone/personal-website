@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
-            <img src={siteMetadata.image} alt="avatar" className="w-48 h-52 rounded-full" />
+            <img src={siteMetadata.image} alt="avatar" className="w-48 rounded-full h-52" />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
@@ -36,28 +36,27 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>Hey there, my name is Igor.</p>
-            <p>I'm a software developer, self-development nerd, and YouTuber.</p>
+
             <p>
-              I was born in Russia and since I was a kid, I've always had an interest in computers
-              and technology, even though my official education led me elsewhere - to get a Master's
-              degree in the field of Economics.
+              I'm originally from Russia and since I was a kid, I've always had an interest in
+              computers and technology, even though my official education led me elsewhere - to get
+              a Master's degree in the field of Economics.
             </p>
             <p>
-              However, my passion for computers never went away, and I eventually decided to fully
-              pursue my dream of becoming a software developer after moving to the USA. I am always
-              striving to learn the latest technologies and expand my knowledge.
+              However, my passion for computers never went away, and after moving to the USA I
+              eventually decided to fully pursue my dream of becoming a software developer. I am
+              always striving to learn the latest technologies and expand my knowledge.
             </p>
             <p>
-              Currently, I'm improving my skills by developing full-stack web applications. The
-              tools that I'm most comfortable with include React.js for the front-end and Node.js
-              with Express.js for the back-end. As to the databases, I'm familiar with SQL, non-SQL,
-              and Firebase workflows.
+              The tools that I'm most comfortable with include JavaScript and Python. As to the
+              frameworks and libraries, I'm very adaptable, however recently I've been spending more
+              time with React.js for the front-end, Flask and Node.js w/ Express.js for the
+              back-end. As to the databases, I work with PostrgeSQL, MySQL, SQLite and non-SQL
+              databases.
             </p>
-            <p>In my spare time, I read books, travel, and make videos for my YouTube channels.</p>
             <p>
-              At this moment I am looking forward to bringing my passion for code to a full-time
-              role. I enjoy working with like-minded people and making amazing products that bring
-              value to users.
+              In my spare time, I read books, travel, do photography, and sometimes make videos for
+              YouTube.
             </p>
           </div>
         </div>
